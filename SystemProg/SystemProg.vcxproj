@@ -125,6 +125,9 @@
   <ItemGroup>
     <ClCompile Include="SystemProg.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\Desktop\ал расп\ConsoleApplication3\ConsoleApplication3\ConsoleApplication3\text.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
