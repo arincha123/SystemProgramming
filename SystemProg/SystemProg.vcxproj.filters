@@ -19,4 +19,9 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="t1.txt" />
+    <Text Include="t2.txt" />
+    <Text Include="t3.txt" />
+  </ItemGroup>
 </Project>
