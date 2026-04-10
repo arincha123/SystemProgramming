@@ -33,3 +33,62 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
+
+//#include <windows.h>
+//#include <stdio.h>
+//
+//#pragma argsused
+//int main(int argc, char* argv[])
+//{
+//	FILE* f;
+//	char buf[1024], out[1024];
+//	int i, j;
+//	long total = 0;
+//	long size;
+//
+//	if (argc < 2) {
+//		printf("No file to process!\n");
+//		return -1;
+//	}
+//
+//	if ((f = fopen(argv[1], "rb+")) == NULL) {
+//		printf("Can't open file %s!\n", argv[1]);
+//		return -1;
+//	}
+//
+//	fseek(f, 0, SEEK_END);
+//	size = ftell(f);
+//	fseek(f, 0, SEEK_SET);
+//
+//	fread(buf, 1, size, f);
+//
+//	for (i = 0, j = 0; i < size; i++) {
+//		if (buf[i] != ' ') {
+//			buf[j++] = buf[i];
+//		}
+//		else {
+//			total++;
+//		}
+//	}
+//
+// 
+// //	if ((f = fopen(argv[1], "wb")) == NULL) {
+//		printf("Can't reopen file %s!\n", argv[1]);
+//		return -1;
+//	}
+// 
+// fwrite(buf, 1, j, f)
+// fclose(f)
+// 
+//	fseek(f, 0, SEEK_SET);
+//	fwrite(buf, 1, j, f);
+//	_chsize(fileno(f), j);
+//
+//	fclose(f);
+//
+//	printf("(ProcessID: %lu), File %s spaces deleted = %d\n",
+//		GetCurrentProcessId(), argv[1], total);
+//
+//	return total;
+//}
+
