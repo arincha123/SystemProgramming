@@ -13,17 +13,17 @@ int main()
     hReadFloat = CreateEvent(NULL, FALSE, FALSE, lpszReadFloat);
     hReadText = CreateEvent(NULL, FALSE, FALSE, lpszReadText);
 
-    for (int j = 0; j < 5; ++j) {
-        float nData;
+    for (int i = 0; i < 5; ++i) {
+        int nData;
         cin >> nData;
-        _cprintf("The number %d is read from the pipe\n,", nData);
+        _cprintf("The number %d is read from the pipe\n", nData);
     }
 
     SetEvent(hReadFloat);
 
-    for (int i = 0; i < 5; ++i) {
+    for (int j = 0; j < 5; ++j) {
         Sleep(500);
-        cout << (i*0.1) << endl;
+        cout << (j*0.1) << endl;
     }
 
     WaitForSingleObject(hReadText, INFINITE);

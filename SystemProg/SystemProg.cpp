@@ -51,7 +51,7 @@ int main(){
 	CloseHandle(hWritePipe);
 
 	_cputs("The clients are created\n");
-	_cputs("Press any key to finish\n");
+	_cputs("Press any key to exit\n");
 	_getch();
 	return 0;
 }
