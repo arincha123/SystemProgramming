@@ -15,12 +15,22 @@ BOOL WINAPI DllMain(HINSTANCE HDll, DWORD dwReason, LPVOID lpReserved) {
 	return TRUE;
 }
 
-extern "C" _declspec(dllexport) int count = 0;
-extern "C" _declspec(dllexport) int Add(int n) {
+//extern "C" _declspec(dllexport) int count = 0;
+//extern "C" _declspec(dllexport) int Add(int n) {
+//	count += n;
+//	return count;
+//}
+//extern "C" _declspec(dllexport) int Sub(int n) {
+//	count -= n; 
+//	return count;
+//}
+
+extern "C" int count = -5;
+extern "C" int Add(int n) {
 	count += n;
 	return count;
 }
-extern "C" _declspec(dllexport) int Sub(int n) {
+extern "C" int Sub(int n) {
 	count -= n;
 	return count;
 }
