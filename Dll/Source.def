@@ -1,0 +1,3 @@
+LIBRARY "FileSpaces"
+EXPORTS
+	RemoveSpacesFromFile @1
