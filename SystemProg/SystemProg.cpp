@@ -7,14 +7,14 @@ using namespace std;
 int main()
 {
 	HMODULE hDll;
-	const char* in = "f1.txt";
-	const char* out = "f2.txt";
+	const char* in = "C:\\Users\\234777\\source\\repos\\arincha123\\SystemProgramming\\SystemProg\\f1.txt";
+	const char* out = "C:\\Users\\234777\\source\\repos\\arincha123\\SystemProgramming\\SystemProg\\f2.txt";
 
 	/*if (argc != 3) {
 		return 1;
 	}*/
 
-	hDll = LoadLibrary("Dll.dll");
+	hDll = LoadLibrary("C:\\Users\\234777\\source\\repos\\arincha123\\SystemProgramming\\x64\\Debug\\Dll2.dll");
 	if (!hDll) {
 		cerr << "Load library falled" << GetLastError() << endl;
 		return 1;
@@ -29,6 +29,7 @@ int main()
 
 	int rc = fn(in, out);
 	cout << (rc == 0 ? "Done" : "Error.") << endl;
+	cout << (rc) << endl;
 
 	FreeLibrary(hDll);
 	return rc;

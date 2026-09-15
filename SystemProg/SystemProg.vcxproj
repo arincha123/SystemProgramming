@@ -126,9 +126,13 @@
     <ClCompile Include="SystemProg.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Dll\Dll.vcxproj">
-      <Project>{083c4974-c67d-4e86-b099-a625b702fe67}</Project>
+    <ProjectReference Include="..\Dll2\Dll2.vcxproj">
+      <Project>{e85575d5-4c4f-4a56-a843-4aac9fcbc6b4}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="f1.txt" />
+    <Text Include="f2.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
