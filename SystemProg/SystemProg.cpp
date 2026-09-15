@@ -2,9 +2,6 @@
 #include <windows.h>
 using namespace std;
 
-typedef int (*RemoveSpacesFn)(const char*, const char*);
-
-
 int main()
 {
 	HMODULE hDll;
@@ -21,6 +18,7 @@ int main()
 		return 1;
 	}
 
+	typedef int (*RemoveSpacesFn)(const char*, const char*);
 	RemoveSpacesFn fn = (RemoveSpacesFn)GetProcAddress(hDll, MAKEINTRESOURCE(1));
 	if (!fn) {
 		cerr << "GetProcAddress failed." << GetLastError() << endl;
