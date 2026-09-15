@@ -5,13 +5,15 @@ using namespace std;
 typedef int (*RemoveSpacesFn)(const char*, const char*);
 
 
-int main(int argc, char* argv[])
+int main()
 {
 	HMODULE hDll;
+	const char* in = "file1.txt";
+	const char* out = "file2.txt";
 
-	if (argc != 3) {
+	/*if (argc != 3) {
 		return 1;
-	}
+	}*/
 
 	hDll = LoadLibrary("DelSpaces.dll");
 	if (!hDll) {
@@ -25,7 +27,7 @@ int main(int argc, char* argv[])
 		return 1;
 	}
 
-	int rc = fn(argv[1], argv[2]);
+	int rc = fn(in, out);
 	cout << (rc == 0 ? "Done" : "Error.") << endl;
 
 	FreeLibrary(hDll);

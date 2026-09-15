@@ -129,6 +129,11 @@
     <Text Include="file1.txt" />
     <Text Include="file2.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DelSpaces\DelSpaces.vcxproj">
+      <Project>{ad513b51-a9c8-4bdc-b1d9-830cc2d9db27}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

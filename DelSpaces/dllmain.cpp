@@ -3,10 +3,8 @@
 #include <windows.h>
 #include <stdio.h>
 
-BOOL APIENTRY DllMain( HMODULE hModule,
-                       DWORD  ul_reason_for_call,
-                       LPVOID lpReserved
-                     )
+
+BOOL WINAPI DllMain( HINSTANCE hDll, DWORD  ul_reason_for_call,LPVOID lpReserved)
 {
     switch (ul_reason_for_call)
     {
@@ -19,7 +17,7 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     return TRUE;
 }
 
-extern "C" int RemoveSpacesFromFile(const char inputPath, const char outputPath) {
+extern "C" int RemoveSpacesFromFile(const char* inputPath, const char* outputPath) {
     FILE* fin = fopen(inputPath, "rb");
     if (!fin) return -1;
 
