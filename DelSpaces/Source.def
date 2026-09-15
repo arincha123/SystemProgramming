@@ -1,3 +1,3 @@
-LIBRARY "DelSpaces"
+LIBRARY "FileSpaces"
 EXPORTS
 	RemoveSpacesFromFile @1
