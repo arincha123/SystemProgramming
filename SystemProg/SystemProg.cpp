@@ -5,7 +5,7 @@ void(*TestHello)(void);
 
 int main(int argc, char* argv[])
 {
-	hLib = LoadLibrary("testfunc.dll");
+	hLib = LoadLibrary("dllmain.dll");
 	if (hLib == NULL) {
 		printf("Cannot load library");
 		exit(-1);

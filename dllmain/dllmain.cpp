@@ -1,5 +1,6 @@
 ﻿// dllmain.cpp : Определяет точку входа для приложения DLL.
 #include "pch.h"
+#include "windows.h"
 //#include "stdafx.h"
 
 __declspec(dllexport) void __cdecl TestHello(void);
@@ -25,4 +26,5 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 	}
 	return TRUE;
 }
+
 
