@@ -1,0 +1,3 @@
+LIBRARY calc
+EXPORTS
+CalculateMaterial

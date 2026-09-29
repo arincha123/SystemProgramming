@@ -1,0 +1,4 @@
+LIBRARY     testfunc
+DESCRIPTION 'DLL-библиотека testfunc'
+EXPORTS
+CalculateMaterial

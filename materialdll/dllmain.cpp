@@ -6,14 +6,22 @@ BOOL APIENTRY DllMain( HMODULE hModule,
                        LPVOID lpReserved
                      )
 {
-    switch (ul_reason_for_call)
-    {
-    case DLL_PROCESS_ATTACH:
-    case DLL_THREAD_ATTACH:
-    case DLL_THREAD_DETACH:
-    case DLL_PROCESS_DETACH:
-        break;
-    }
-    return TRUE;
+	switch (ul_reason_for_call)
+	{
+	case DLL_PROCESS_ATTACH:
+		MessageBox(NULL, "The DLL is loaded", "DLL Skeleton", MB_OK);
+		break;
+	case DLL_THREAD_ATTACH:
+		MessageBox(NULL, "A thread is created in this process", "DLL Skeleton", MB_OK);
+		break;
+	case DLL_THREAD_DETACH:
+		MessageBox(NULL, "A thread is destroyed in this process", "DLL Skeleton", MB_OK);
+		break;
+	case DLL_PROCESS_DETACH:
+		MessageBox(NULL, "The DLL is unloaded", "DLL Skeleton", MB_OK);
+		break;
+	}
+	return TRUE;
+
 }
 

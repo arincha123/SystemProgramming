@@ -126,8 +126,8 @@
     <ClCompile Include="SystemProg.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\dllm\dllm.vcxproj">
-      <Project>{58d64ff8-3bfd-47b6-84b8-5bcc36151e09}</Project>
+    <ProjectReference Include="..\Mdll\Mdll.vcxproj">
+      <Project>{ec985165-b12c-44cb-b91b-9cbdef5ceb32}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
