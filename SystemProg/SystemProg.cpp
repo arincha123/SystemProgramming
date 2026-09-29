@@ -39,15 +39,12 @@ int main(int argc, char* argv[])
 	hLib = LoadLibrary("Mdll.dll");
 	if (hLib == NULL) {
 		printf("Не удалось загрузить библиотеку!\n");
-		system("pause");
 		exit(-1);
 	}
 
 	CalculateMaterial = (int(*)(int, int, int, double, double))GetProcAddress(hLib, "CalculateMaterial");
 	if (CalculateMaterial == NULL) {
 		printf("Функция не найдена в библиотеке!\n");
-		FreeLibrary(hLib);
-		system("pause");
 		exit(-2);
 	}
 
