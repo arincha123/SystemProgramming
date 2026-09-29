@@ -23,5 +23,9 @@ BOOL APIENTRY DllMain(HMODULE hModule,
 		break;
 	}
 	return TRUE;
+
+	extern "C" {
+		int CalculateMaterial(int productType, int materialType, int productQuantity, double param1, double param2);
+	}
 }
 
