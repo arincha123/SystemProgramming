@@ -126,7 +126,7 @@
     <ClCompile Include="Вывод содержимого файла.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\..\..\..\..\Desktop\test.txt" />
+    <Text Include="File1.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
