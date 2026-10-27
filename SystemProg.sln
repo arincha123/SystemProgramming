@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SystemProg", "SystemProg\Sy
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Установка и чтение для Read и Write", "Установка и чтение для Read и Write\Установка и чтение для Read и Write.vcxproj", "{643B8FCA-98F7-464E-86D4-76DCEC5D3652}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Вывод содержимого файла", "Вывод содержимого файла\Вывод содержимого файла.vcxproj", "{EF13B664-CFDC-4E02-B56C-3CEB690CEA04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{643B8FCA-98F7-464E-86D4-76DCEC5D3652}.Release|x64.Build.0 = Release|x64
 		{643B8FCA-98F7-464E-86D4-76DCEC5D3652}.Release|x86.ActiveCfg = Release|Win32
 		{643B8FCA-98F7-464E-86D4-76DCEC5D3652}.Release|x86.Build.0 = Release|Win32
+		{EF13B664-CFDC-4E02-B56C-3CEB690CEA04}.Debug|x64.ActiveCfg = Debug|x64
+		{EF13B664-CFDC-4E02-B56C-3CEB690CEA04}.Debug|x64.Build.0 = Debug|x64
+		{EF13B664-CFDC-4E02-B56C-3CEB690CEA04}.Debug|x86.ActiveCfg = Debug|Win32
+		{EF13B664-CFDC-4E02-B56C-3CEB690CEA04}.Debug|x86.Build.0 = Debug|Win32
+		{EF13B664-CFDC-4E02-B56C-3CEB690CEA04}.Release|x64.ActiveCfg = Release|x64
+		{EF13B664-CFDC-4E02-B56C-3CEB690CEA04}.Release|x64.Build.0 = Release|x64
+		{EF13B664-CFDC-4E02-B56C-3CEB690CEA04}.Release|x86.ActiveCfg = Release|Win32
+		{EF13B664-CFDC-4E02-B56C-3CEB690CEA04}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

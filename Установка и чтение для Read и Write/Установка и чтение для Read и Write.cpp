@@ -8,7 +8,7 @@ int main() {
     HANDLE hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
     if (hStdout == INVALID_HANDLE_VALUE) return 1;
 
-    cout << "Привет, мир! Тестируем атрибуты." << endl;
+    cout << "Привет, о дивный мир!" << endl;
 
     WORD writeAttrs[12];
     for (int i = 0; i < 12; i++) {
