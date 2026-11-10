@@ -5,7 +5,7 @@ int main()
 {
     LPVOID vm; // указатель на виртуальную память
     SIZE_T size = 4096; // размер памяти
-    // распределяем виртуальную память
+
     vm = VirtualAlloc(
         NULL,
         size,
