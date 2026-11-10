@@ -58,12 +58,9 @@ int main(int argc, LPTSTR argv[])
         }
 
         if (!silent) {
-            const char* header = "\n===== Содержимое файла: ";
-            WriteConsoleA(hStdOut, header, lstrlenA(header), &nWritten, NULL);
-            WriteConsoleA(hStdOut, argv[i], lstrlenA(argv[i]), &nWritten, NULL);
-            const char* header2 = " =====\n";
-            WriteConsoleA(hStdOut, header2, lstrlenA(header2), &nWritten, NULL);
+            cout << "\n===== Содержимое файла: " << argv[i] << " =====" << endl;
         }
+
 
         while (ReadFile(hIn, buffer, BUF_SIZE, &nRead, NULL) && nRead > 0) {
             if (!WriteConsoleA(hStdOut, buffer, nRead, &nWritten, NULL)) {

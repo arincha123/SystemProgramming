@@ -1,5 +1,6 @@
 #include <windows.h>
 #include <iostream>
+#include <conio.h>
 
 using namespace std;
 
@@ -47,13 +48,14 @@ int main(int argc, LPTSTR argv[])
             break;
         }
     }
-
-    CloseHandle(hIn);
+    getch();
 
     cout << "\nФайл выведен в новый буфер экрана." << endl;
     cout << "Нажмите любую клавишу для выхода..." << endl;
-    system("pause > nul");
 
+    CloseHandle(hIn);
     CloseHandle(hNewBuf);
+
+
     return 0;
 }
